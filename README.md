@@ -12,5 +12,5 @@ HTML, CSS and Vanilla Javascript Projects
   - Weight converter which converts weigth in kilograms, pounds and ounces, all at once.
 - [Stone-Paper-Scissors-Game](./stone-paper-scissors-game)
   - Stone, paper, scissors game with user and computer score, shows result via modal, reset option available.
-- [Zip-code-validator](./Zip-code-validator)
+- [Zip-code-validator](./zip-code-validator)
   - Zip code validator which validates Indian zip codes using postal-pincode api.
