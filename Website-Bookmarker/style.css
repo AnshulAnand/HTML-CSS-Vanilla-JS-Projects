@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header {
+  font-size: 50px;
+  font-weight: 100;
+  color: #001f4d;
+}
+.header i {
+  color: #0066ff;
+}
+.input-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#site-name,
+#site-url {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #999966;
+}
+input:hover,
+input:focus {
+  background-color: #ebebe0;
+}
+.header-2 h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.submit-btn {
+  width: calc(100% + 15px);
+  height: 40px;
+  padding: 10px;
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 15px;
+}
+.submit-btn:hover {
+  background-color: #0059b3;
+}
+.bookmarks-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.bookmark-header {
+  text-align: center;
+  color: #001f4d;
+  font-weight: 100;
+  margin-top: 50px;
+}
+.bookmarks {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #999966;
+  margin-bottom: 20px;
+}
+.bookmarks a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 40px;
+}
+.bookmarks a i {
+  margin-left: 5px;
+}
+.bookmarks button {
+  width: 100px;
+  height: 30px;
+  border: 0;
+  background-color: #ff1a1a;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 40px;
+}
+.bookmarks button:hover {
+  background-color: #ff0000;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #999966 transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <div id="header">Password Generator</div>
+  <div id="container">
+    <div>
+      <div id="output"></div><button id="copy-btn"><i class="bi bi-clipboard"></i></button>
+    </div>
+    <span id="showCopyText">Text copied to clipboard <i class="bi bi-check-square-fill"></i></span>
+    <div id="filter-container">
+      <div>
+        <span>Length of password</span>
+        <input type="number" min="1" max="20" id="number-input">
+      </div>
+      <div>
+        <label for="upper-case">Upper Case Letters</label>
+        <input type="checkbox" id="upper-case" value="upper-case">
+      </div>
+      <div>
+        <label for="lower-case">Lower Case Letters</label>
+        <input type="checkbox" id="lower-case" value="lower-case">
+      </div>
+      <div>
+        <label for="numbers">Numbers</label>
+        <input type="checkbox" id="numbers" value="numbers">
+      </div>
+      <div>
+        <label for="symbols">Symbols</label>
+        <input type="checkbox" id="symbols" value="symbols">
+      </div>
+    </div>
+    <button id="submit-btn">Generate Password</button>
+  </div>
+  <input type="text" id="copy-to-clipboard">
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #38fbef, #5baffc);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#container {
+  margin: auto;
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 500px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+#input-container {
+  width: 500px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 400px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+#add-btn {
+  box-sizing: border-box;
+  width: 70px;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #9933ff;
+  color: #fff;
+}
+
+#add-btn:hover {
+  background-color: #8c1aff;
+}
+
+#todo-lists {
+  width: 500px;
+  max-height: 500px;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 10px;
+  overflow-y: auto;
+  margin-bottom: 0;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+  font-size: 18px;
+  background-color: #e6e6e6;
+}
+
+#delete-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  background-color: #ff3333;
+  color: #fff;
+}
+
+#delete-btn:hover {
+  background-color: #ff0000;
+}
+
+#list-check {
+  font-size: 100px;
+  color: #ccc;
+}
+
+#list-check-p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+#clear-all-btn {
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+  background-color: #9933ff;
+  color: #fff;
+}
+
+#clear-all-btn:hover {
+  background-color: #8c1aff;
+}

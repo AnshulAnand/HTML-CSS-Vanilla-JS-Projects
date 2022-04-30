@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+#container {
+  margin: auto;
+  margin-top: 50px;
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 10px 40px 10px;
+  box-sizing: border-box;
+}
+#container h1 {
+  font-size: 40px;
+}
+#container h1 i {
+  margin-right: 10px;
+}
+#input {
+  width: 900px;
+  height: 50px;
+  padding-left: 20px;
+  margin-right: 0;
+  font-size: 20px;
+}
+#result-not-found,
+#result-found {
+  margin: auto;
+  width: 1000px;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+#result-not-found {
+  border: 1px solid red;
+  background-color: #ffcccc;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+#result-found {
+  border: 1px solid green;
+  box-sizing: border-box;
+  padding-left: 40px;
+  background-color: #b3ffb3;
+}
+#result-found li {
+  padding: 5px;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  font-size: 18px;
+}
+#header p {
+  margin: 0;
+}
+#close-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding-right: 20px;
+  font-size: 18px;
+}
+#info-container {
+  list-style: none;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+@media only screen and (max-width: 1015px) {
+  #container {
+    width: 500px;
+  }
+  #input {
+    width: 400px;
+  }
+  #result-not-found,
+  #result-found {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 515px) {
+  #container {
+    width: 400px;
+    text-align: center;
+  }
+  #input {
+    width: 300px;
+  }
+  #result-not-found,
+  #result-found {
+    width: 400px;
+  }
+}

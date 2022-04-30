@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Stone, Paper, Scissors</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="nav">
+        <h1>Rocks Paper Scissors</h1>
+        <button id="restart" onclick="restartGame()">Restart Game</button>
+      </div>
+      <div id="score-container">
+        <div id="player">
+          <h2>Player</h2>
+          <p>0</p>
+        </div>
+        <div id="computer">
+          <h2>computer</h2>
+          <p>0</p>
+        </div>
+      </div>
+      <div id="choices">
+        <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
+        <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
+        <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div id="modal-content">
+        <h2>You won!</h2>
+        <h3>Computer chose</h3>
+        <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
+        <p>Rock</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
