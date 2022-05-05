@@ -1,16 +1,23 @@
 # HTML-CSS-Vanilla-JS-Projects
 HTML, CSS and Vanilla Javascript Projects
 - [Filterable-Contacts-List](./Filterable-Contacts-List)
-  - Filterable by name contact list which fetches data from random users api 
+  - Filterable by name contact list which fetches data from random users api
+  - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Filterable-Contacts-List/index.html)
 - [Password-Generator](./Password-Generator)
-  - Random password generator in which user can specify password length, and what characters to use (upper-case, lower-case letters, numbers and symbols) 
+  - Random password generator in which user can specify password length, and what characters to use (upper-case, lower-case letters, numbers and symbols)
+  - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Password-Generator/index.html)
 - [Todo-App](./Todo-App)
   - Todo app which stores to-do's in local storage with delete option.
+  - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Todo-App/index.html)
 - [Website-Bookmarker](./Website-Bookmarker)
   - Website Bookmarker which stores site name and url in local storage.
+  - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Website-Bookmarker/index.html)
 - [Weight-Converter](./Weight-Converter)
   - Weight converter which converts weigth in kilograms, pounds and ounces, all at once.
+  - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Weight-Converter/index.html)
 - [Stone-Paper-Scissors-Game](./stone-paper-scissors-game)
   - Stone, paper, scissors game with user and computer score, shows result via modal, reset option available.
+  - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/stone-paper-scissors-game/index.html)
 - [Zip-code-validator](./zip-code-validator)
   - Zip code validator which validates Indian zip codes using postal-pincode api.
+  - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/zip-code-validator/index.html)
