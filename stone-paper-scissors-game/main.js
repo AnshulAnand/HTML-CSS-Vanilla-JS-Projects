@@ -50,7 +50,7 @@ function showModalRock() {
   </div>
     `;
     player.innerHTML = `
-    <h2>computer</h2>
+    <h2>Player</h2>
     <p>${playerPoints}</p>`;
   }
 
@@ -70,7 +70,7 @@ function showModalPaper() {
     </div>
       `;
     player.innerHTML = `
-      <h2>computer</h2>
+      <h2>Player</h2>
       <p>${playerPoints}</p>`;
   } else if (computerChoice <= 0.67) {
     modal.innerHTML = `
@@ -124,7 +124,7 @@ function showModalScissors() {
     </div>
       `;
     player.innerHTML = `
-      <h2>computer</h2>
+      <h2>Player</h2>
       <p>${playerPoints}</p>`;
   } else {
     modal.innerHTML = `
@@ -152,6 +152,6 @@ function restartGame() {
     <p>${computerPoints}</p>`;
   playerPoints = 0;
   player.innerHTML = `
-    <h2>computer</h2>
+    <h2>Player</h2>
     <p>${playerPoints}</p>`;
 }
