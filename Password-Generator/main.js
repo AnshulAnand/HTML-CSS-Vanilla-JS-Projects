@@ -1,75 +1,82 @@
-const output = document.getElementById('output')
-const copyBtn = document.getElementById('copy-btn')
-const numberInput = document.getElementById('number-input')
-const submitBtn = document.getElementById('submit-btn')
-const upperCase = document.getElementById('upper-case')
-const lowerCase = document.getElementById('lower-case')
-const numbers = document.getElementById('numbers')
-const symbols = document.getElementById('symbols')
+const output = document.getElementById("output");
+const copyBtn = document.getElementById("copy-btn");
+const numberInput = document.getElementById("number-input");
+const submitBtn = document.getElementById("submit-btn");
+const upperCase = document.getElementById("upper-case");
+const lowerCase = document.getElementById("lower-case");
+const numbers = document.getElementById("numbers");
+const symbols = document.getElementById("symbols");
 
-let password = ''
+let password = "";
 
-submitBtn.addEventListener('click', generatePassword)
+submitBtn.addEventListener("click", generatePassword);
 
 function generatePassword() {
-
   const filter = {
     length: numberInput.value,
     uppercase: upperCase.checked,
     lowercase: lowerCase.checked,
     numbers: numbers.checked,
-    symbols: symbols.checked
-  }
+    symbols: symbols.checked,
+  };
 
-  var arr = []
+  var arr = [];
 
   if (filter.uppercase == true) {
-    arr.push(generateUpperCase)
+    arr.push(generateUpperCase);
   }
   if (filter.lowercase == true) {
-    arr.push(generateLowerCase)
+    arr.push(generateLowerCase);
   }
   if (filter.numbers == true) {
-    arr.push(generateNumber)
+    arr.push(generateNumber);
   }
   if (filter.symbols == true) {
-    arr.push(generateSymbol)
+    arr.push(generateSymbol);
   }
 
   let i = 0;
 
-  while (i < Math.round(filter.length / 2)) {
+  if (arr.length == 1) {
+    while (i < filter.length) {
+      for (let j = 0; j < arr.length; j++) {
+        arr[j]();
+      }
 
-    for (let j = 0; j < arr.length; j++) {
-      arr[j]();
+      i++;
     }
+  } else {
+    while (i < Math.round(filter.length / 2)) {
+      for (let j = 0; j < arr.length; j++) {
+        arr[j]();
+      }
 
-    i++
-
+      i++;
+    }
   }
 
   output.innerText = password.slice(0, filter.length);
-  arr = []
-  password = ''
+  arr = [];
+  password = "";
 }
 
 function generateUpperCase() {
-  password += String.fromCharCode(Math.floor((Math.random() * 26) + 65))
+  password += String.fromCharCode(Math.floor(Math.random() * 26 + 65));
 }
 
 function generateLowerCase() {
-  password += String.fromCharCode(Math.floor((Math.random() * 26) + 97))
+  password += String.fromCharCode(Math.floor(Math.random() * 26 + 97));
 }
 
 function generateNumber() {
-  password += String.fromCharCode(Math.floor((Math.random() * 10) + 48))
+  password += String.fromCharCode(Math.floor(Math.random() * 10 + 48));
 }
 
 function generateSymbol() {
-  password += String.fromCharCode(Math.floor((Math.random() * 7) + 33))
+  password += String.fromCharCode(Math.floor(Math.random() * 7 + 33));
 }
 
-copyBtn.addEventListener('click', copyToClipboard)
+copyBtn.addEventListener("click", copyToClipboard);
 
 function copyToClipboard() {
   var copyText = document.getElementById("copy-to-clipboard");
@@ -77,8 +84,8 @@ function copyToClipboard() {
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(output.innerText);
 
-  document.getElementById('showCopyText').style.display = 'block';
+  document.getElementById("showCopyText").style.display = "block";
   setTimeout(() => {
-    document.getElementById('showCopyText').style.display = 'none';
-  }, 2000)
+    document.getElementById("showCopyText").style.display = "none";
+  }, 2000);
 }
