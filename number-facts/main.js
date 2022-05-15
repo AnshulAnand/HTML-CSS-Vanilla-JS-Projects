@@ -18,14 +18,23 @@ async function getFacts(e) {
   } else {
     selectValue = select.value.toLowerCase();
   }
-  await fetch(`http://numbersapi.com/${e.target.value}/${selectValue}`)
-    .then((response) => response.text())
-    .then((data) => {
-      const fact = document.getElementById("fact");
-      fact.innerHTML = "";
-      fact.innerHTML += `
-        <h2>${select.value} Fact</h2>
-        <p>${data}</p>
-        `;
-    });
-}
+  const res = await fetch(`http://numbersapi.com/${e.target.value}/${selectValue}`)
+  const response = await res.text();
+  const fact = document.getElementById("fact");
+  fact.innerHTML = "";
+  fact.innerHTML += `
+  <h2>${select.value} Fact</h2>
+  <p>${response}</p>
+  `;
+  
+  // If not using async/await
+    // .then((response) => response.text())
+    // .then((data) => {
+    //   const fact = document.getElementById("fact");
+    //   fact.innerHTML = "";
+    //   fact.innerHTML += `
+    //     <h2>${select.value} Fact</h2>
+    //     <p>${data}</p>
+    //     `;
+    // });
+  }
