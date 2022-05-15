@@ -8,10 +8,6 @@ HTML, CSS and Vanilla Javascript Projects
   - Random password generator in which user can specify password length, and what characters to use (upper-case, lower-case letters, numbers and symbols)
   - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Password-Generator/index.html)
 ![_D__ANSHUL_Projects_1-Front-End_Password-Generator_index html](https://user-images.githubusercontent.com/91583685/168014602-a1925e4e-1389-4bf2-9bf0-7946c0c1991b.png)
-- [Todo-App](./Todo-App)
-  - Todo app which stores to-do's in local storage with delete option.
-  -  See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Todo-App/index.html)
-![_D__ANSHUL_Projects_1-Front-End_Todo-App_index html](https://user-images.githubusercontent.com/91583685/168015109-f168af79-c247-4472-b5c9-88a532082d29.png)
 
 - [Website-Bookmarker](./Website-Bookmarker)
   - Website Bookmarker which stores site name and url in local storage.
