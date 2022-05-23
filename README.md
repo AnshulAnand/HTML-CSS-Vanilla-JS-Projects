@@ -4,10 +4,11 @@ HTML, CSS and Vanilla Javascript Projects
   - Filterable by name contact list which fetches data from random users api
   - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Filterable-Contacts-List/index.html)
 ![Filterable-Contacts-List](https://user-images.githubusercontent.com/91583685/168014261-0fe4b49b-112f-435d-81b6-7da34ce098c5.png)
+
 - [Password-Generator](./Password-Generator)
   - Random password generator in which user can specify password length, and what characters to use (upper-case, lower-case letters, numbers and symbols)
   - See [preview](https://htmlpreview.github.io/?https://github.com/AnshulAnand/HTML-CSS-Vanilla-JS-Projects/blob/main/Password-Generator/index.html)
-![_D__ANSHUL_Projects_1-Front-End_Password-Generator_index html](https://user-images.githubusercontent.com/91583685/168014602-a1925e4e-1389-4bf2-9bf0-7946c0c1991b.png)
+![_D__ANSHUL_Projects_1-Front-End_Password-Generator_index html (1)](https://user-images.githubusercontent.com/91583685/169794954-dd029c01-0228-457f-a0f1-d13f41f164e5.png)
 
 - [Website-Bookmarker](./Website-Bookmarker)
   - Website Bookmarker which stores site name and url in local storage.
